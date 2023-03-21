@@ -64,3 +64,4 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
 [Github Pages Live Site Deployment](https://tawana0518.github.io/mywebclass-simulation/)
+[Instructions for Installing the Project on the Developer's Computer](https://github.com/tawana0518/mywebclass-simulation/wiki/DevOps-Task:--Instructions-for-Installing-the-Project-on-the-Developer's-Computer)
