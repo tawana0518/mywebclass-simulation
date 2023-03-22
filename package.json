@@ -60,6 +60,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6"
+    "@popperjs/core": "^2.11.6",
+    "axe-core": "^4.6.3",
+    "get-contrast": "^3.0.0"
   }
 }
