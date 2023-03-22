@@ -14,7 +14,7 @@ test('test', async ({ page }) => {
   expect(privacyPolicyAgreed).toBeTruthy()
 
   // Click the "Content Template" link
-  await page.getByRole('link', { name: 'Content Template' }).click()
+  await page.getByRole('link', { name: 'Navigate' }).click()
 
   // Click the "Section 3" link
   await page.getByRole('link', { name: 'Section 3' }).click()
