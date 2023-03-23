@@ -31,15 +31,16 @@
             <div class="container">
                 <a class="navbar-brand" href="/">MyWebClass.org</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                 data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Toggle navigation</span>
                 </button>
+                <!--Added descriptive text -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
+                            <a class="nav-link" href="content.html">Navigate</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +64,8 @@
                 </div>
                 <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
                     <img class="rounded-lg-3 img-fluid" src="assets/images/teacher.gif"
-                         alt="a teacher with students" width="720">
+                   alt="A teacher standing in front of a chalkboard with students sitting at their desks." width="720">
+                    <!--Added better descriptive text to the image -->
                 </div>
             </div>
         </div>
@@ -78,7 +80,7 @@
                         Story</a>
                     </li>
 
-                    <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html">Privacy
+                    <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html">Privacy and Cookies
                         Policy</a>
                     </li>
                     </li>
@@ -104,8 +106,9 @@
                     <h5>Subscribe to our newsletter</h5>
                     <p>Monthly digest of what's new and exciting from us.</p>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <label for="newsletter1">Subscribe to our newsletter</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <!--Used a label element to associate the form input with its purpose -->
                         <button class="btn btn-primary" type="button">Subscribe</button>
                     </div>
                 </form>
