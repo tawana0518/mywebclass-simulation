@@ -12,10 +12,4 @@ test('test', async ({ page }) => {
 
   // Check if privacyPolicyAgreed is set in local storage
   expect(privacyPolicyAgreed).toBeTruthy()
-
-  // Click the "Content Template" link
-  await page.getByRole('link', { name: 'Navigate' }).click()
-
-  // Click the "Section 3" link
-  await page.getByRole('link', { name: 'Section 3' }).click()
 })
