@@ -114,12 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // @Rajiv 19th March - Create a JavaScript function in the main.js file to set the language attribute dynamically based on the user's language preference:
 function setLanguage () {
-  // Get the user's preferred language
+  const supportedLanguages = ['en', 'fr', 'de'] // Add supported languages here
   const userLang = navigator.language || navigator.userLanguage
+  const langCode = userLang.substr(0, 2).toLowerCase()
 
-  // Check if the user's language is supported (in this example, we're checking for English)
-  const supportedLang = userLang.substring(0, 2).toLowerCase() === 'en' ? 'en' : 'en'
-
-  // Set the 'lang' attribute of the 'html' tag to the supported language
-  document.documentElement.setAttribute('lang', supportedLang)
+  const htmlTag = document.querySelector('html')
+  if (supportedLanguages.includes(langCode)) {
+    htmlTag.setAttribute('lang', langCode)
+  } else {
+    htmlTag.setAttribute('lang', 'en') // Default to English if the user's language is not supported
+  }
 }
